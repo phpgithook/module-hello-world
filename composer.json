@@ -1,6 +1,6 @@
 {
     "name": "phpgithook/module-hello-world",
-    "type": "project",
+    "type": "phpgithook-module",
     "description": "PHPGithook - Hello World module",
     "license": "MIT",
     "authors": [
@@ -11,8 +11,11 @@
     ],
     "require": {
         "php": ">=7.4",
+        "ext-json": "*",
         "symfony/console": "^5.1",
-        "phpgithook/module-interface": "*"
+        "phpgithook/phpgithook": "dev-master",
+        "phpgithook/module-interface": "dev-master",
+        "symfony/http-client": "^5.1"
     },
     "autoload": {
         "psr-4": {
@@ -23,7 +26,7 @@
         "phpunit/phpunit": "^9.1",
         "friendsofphp/php-cs-fixer": "^2.16",
         "phpstan/phpstan": "^0.12.25",
-        "phpgithook/module-tester": "*"
+        "phpgithook/module-tester": "dev-master"
     },
     "autoload-dev": {
         "psr-4": {

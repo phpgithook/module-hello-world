@@ -67,6 +67,6 @@ class SetupTest extends TestCase
         $output = new NullOutput();
 
         $this->class->createConfiguration($input, $output, $config);
-        self::assertSame('I\'m precommit message', $config->get('pre-commit-message'));
+        self::assertSame('I\'m precommit message', $config->get(Setup::COMMIT_ADD));
     }
 }
